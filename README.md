@@ -7,9 +7,7 @@ seguintes tecnologias:
 • MongoDB | Redis
 • Serviços emcontainers (script para build e geração)
 
-## 🛠️ Construído com
-
-Mencione as ferramentas que você usou para criar seu projeto
+## 🛠️ Construído com:
 
 * [C# - .NET CORE] - Backend
 * [Vue js] - Frontend
