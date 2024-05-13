@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"  # Porta em que o MongoDB será exposto
+    volumes:
+      - mongodb_data:/data/db  # Volume para persistir os dados do MongoDB
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root  # Usuário root do MongoDB
+      MONGO_INITDB_ROOT_PASSWORD: example  # Senha do usuário root
+      MONGO_INITDB_DATABASE: HeroRegistrationDB  # Nome do banco de dados a ser inicializado
+
+volumes:
+  mongodb_data:  # Definição do volume para persistência de dados do MongoDB
